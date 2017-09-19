@@ -1,7 +1,7 @@
 <div class="span6 preview" style="max-height: 1280px; min-height: 1280px;"><h1 class="title mousetrap">MVP模式做的尝试</h1><div class="content mousetrap"><p>纯粹是个人学习总结，如有不对的地方请吐槽。<br>
 目录结构</p>
 <h4>app模块下的目录结构</h4>
-<div class="image-package"><img src="//upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip" alt="image.png"><br><div class="image-caption">image.png</div></div><br>
+<div class="image-package"><img src="http://upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><div class="image-caption">image.png</div></div><br>
 <p>app目录下放全局配置文件，包括Application<br>
 base目录一眼就看清是什么<br>
 di目录存放dagger有关的文件<br>
