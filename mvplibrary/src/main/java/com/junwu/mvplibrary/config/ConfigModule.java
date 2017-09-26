@@ -29,12 +29,6 @@ public class ConfigModule {
 
     //请求地址
     private HttpUrl mApiUrl;
-    //    //响应拦截器
-//    private Interceptor mResponseInterceptor;
-//    //请求拦截器
-//    private Interceptor mRequestInterceptor;
-//    //Log拦截器
-//    private Interceptor mLogInterceptor;
     //Retrofit配置
     private RetrofitConfiguration mRetrofitConfiguration;
     //okHttp配置
@@ -46,9 +40,6 @@ public class ConfigModule {
 
     private ConfigModule(Builder builder) {
         mApiUrl = builder.mApiUrl;
-//        mResponseInterceptor = builder.mResponseInterceptor;
-//        mRequestInterceptor = builder.mRequestInterceptor;
-//        mLogInterceptor = builder.mLogInterceptor;
         mRetrofitConfiguration = builder.mRetrofitConfiguration;
         mOkHttpConfiguration = builder.mOkhttpConfiguration;
         mRxCacheConfiguration = builder.mRxCacheConfiguration;
@@ -114,29 +105,7 @@ public class ConfigModule {
         file = new File(cachePath);
         makeDirs(file);
         return file;
-//        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-//            File file = null;
-//            file = context.getExternalCacheDir();//获取系统管理的sd卡缓存文件
-//            if (file == null) {//如果获取的为空,就是用自己定义的缓存文件夹做缓存路径
-//                file = new File(getCacheFilePath(context));
-//                makeDirs(file);
-//            }
-//            return file;
-//        } else {
-//            return context.getCacheDir();
-//        }
     }
-
-//    /**
-//     * 获取自定义缓存文件地址
-//     *
-//     * @param context 上下文
-//     * @return 路径
-//     */
-//    public static String getCacheFilePath(Context context) {
-//        String packageName = context.getPackageName();
-//        return "/mnt/sdcard/" + packageName;
-//    }
 
     /**
      * 创建未存在的文件夹
@@ -156,37 +125,9 @@ public class ConfigModule {
         }
     }
 
-
-//    @Singleton
-//    @Provides
-//    @Named(value = "Response")
-//    Interceptor provideResponseInterceptor() {
-//        return mResponseInterceptor;
-//    }
-//
-//    @Singleton
-//    @Provides
-//    @Named(value = "Request")
-//    Interceptor provideRequestInterceptor() {
-//        return mRequestInterceptor;
-//    }
-//
-//    @Singleton
-//    @Provides
-//    @Named(value = "Log")
-//    Interceptor provideLogInterceptor() {
-//        return mLogInterceptor;
-//    }
-
     public static class Builder {
         //请求地址
         private HttpUrl mApiUrl;
-        //        //响应拦截器
-//        private Interceptor mResponseInterceptor;
-//        //请求拦截器
-//        private Interceptor mRequestInterceptor;
-//        //Log拦截器
-//        private Interceptor mLogInterceptor;
         //Retrofit配置
         private RetrofitConfiguration mRetrofitConfiguration;
         //okHttp配置
@@ -203,45 +144,6 @@ public class ConfigModule {
             this.mApiUrl = HttpUrl.parse(baseurl);
             return this;
         }
-
-//        public Builder setResponseInterceptor(Interceptor responseInterceptor) {
-//            if (responseInterceptor == null) {
-//                responseInterceptor = new Interceptor() {
-//                    @Override
-//                    public Response intercept(Chain chain) throws IOException {
-//                        return chain.proceed(chain.request());
-//                    }
-//                };
-//            }
-//            mResponseInterceptor = responseInterceptor;
-//            return this;
-//        }
-//
-//        public Builder setRequestInterceptor(Interceptor requestInterceptor) {
-//            if (requestInterceptor == null) {
-//                requestInterceptor = new Interceptor() {
-//                    @Override
-//                    public Response intercept(Chain chain) throws IOException {
-//                        return chain.proceed(chain.request());
-//                    }
-//                };
-//            }
-//            mRequestInterceptor = requestInterceptor;
-//            return this;
-//        }
-//
-//        public Builder setLogInterceptor(Interceptor logInterceptor) {
-//            if (logInterceptor == null) {
-//                logInterceptor = new Interceptor() {
-//                    @Override
-//                    public Response intercept(Chain chain) throws IOException {
-//                        return chain.proceed(chain.request());
-//                    }
-//                };
-//            }
-//            mLogInterceptor = logInterceptor;
-//            return this;
-//        }
 
         public Builder setRetrofitConfiguration(RetrofitConfiguration retrofitConfiguration) {
             if (retrofitConfiguration == null) {
@@ -295,9 +197,6 @@ public class ConfigModule {
         }
 
         private void isEmpty() {
-//            setResponseInterceptor(mResponseInterceptor)
-//                    .setRequestInterceptor(mRequestInterceptor)
-//                    .setLogInterceptor(mLogInterceptor)
             setRetrofitConfiguration(mRetrofitConfiguration)
                     .setOkhttpConfiguration(mOkhttpConfiguration)
                     .setRxCacheConfiguration(mRxCacheConfiguration);

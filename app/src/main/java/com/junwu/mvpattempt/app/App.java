@@ -45,4 +45,11 @@ public class App extends Application {
         mAppDelegate.injectRegApiService(new AppConfigModule(), new RegisterApiModule());
     }
 
+    @Override
+    public void onTerminate() {
+        if (mAppDelegate != null) {
+            mAppDelegate.onTerminate();
+        }
+        super.onTerminate();
+    }
 }

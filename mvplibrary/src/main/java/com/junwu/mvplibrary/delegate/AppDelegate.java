@@ -7,6 +7,7 @@ import com.junwu.mvplibrary.config.IConfigModule;
 import com.junwu.mvplibrary.config.IRegisterApiModule;
 import com.junwu.mvplibrary.delegate.impls.ActivityLifecycle;
 import com.junwu.mvplibrary.di.component.AppComponent;
+import com.junwu.mvplibrary.di.component.DaggerAppComponent;
 import com.junwu.mvplibrary.di.module.AppModule;
 import com.junwu.mvplibrary.di.module.ClientHttpModule;
 import com.junwu.mvplibrary.http.IRepositoryManager;
@@ -20,10 +21,13 @@ import com.junwu.mvplibrary.http.IRepositoryManager;
  */
 public class AppDelegate {
 
+    //当前对象
     public static AppDelegate sAppDelegate;
+    //Application
     private Application mApplication;
     //Activity生命周期监听类
     private ActivityLifecycle mActivityLifecycle;
+    //Component
     private AppComponent mAppComponent;
 
     /**
@@ -92,7 +96,5 @@ public class AppDelegate {
     public AppComponent getAppComponent() {
         return mAppComponent;
     }
-
-
 
 }

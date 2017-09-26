@@ -89,13 +89,6 @@ public class ClientHttpModule {
         return new RxCacheBuilderEntity();
     }
 
-//    @Singleton
-//    @Provides
-//    @Named(value = Constants.CACHE_FOLDER)
-//    String providerCacheFolder() {
-//        return cacheFolder;
-//    }
-
     /****************************************IRepositoryManager***************************************/
 
     @Singleton

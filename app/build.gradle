@@ -56,3 +56,4 @@ dependencies {
     compile project(':mvplibrary')
 
 }
+//引用查看地址 https://jitpack.io/#pujunwu/MVPAttempt/v1.0.0

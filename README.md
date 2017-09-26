@@ -144,5 +144,7 @@ public void onCreate() {
 <p>到这里，关键部分已经介绍完了，其他的后面继续更新。</p></div></div>
 
 
+https://jitpack.io/#pujunwu/MVPAttempt/v1.0.0
+
 <h4>关于MVP部分</h4>
 未完待续...
