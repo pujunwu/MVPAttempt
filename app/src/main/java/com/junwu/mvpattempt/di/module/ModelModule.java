@@ -1,6 +1,11 @@
 package com.junwu.mvpattempt.di.module;
 
+import com.junwu.mvpattempt.ui.fragments.start.StartContract;
+import com.junwu.mvpattempt.ui.fragments.start.StartModel;
+import com.junwu.mvplibrary.di.scope.ViewScope;
+
 import dagger.Module;
+import dagger.Provides;
 
 /**
  * ===============================
@@ -12,31 +17,10 @@ import dagger.Module;
 @Module
 public class ModelModule {
 
-//    @ViewScope
-//    @Provides
-//    MainContract.Model provideMainContractModel(MainModel mainModel) {
-//        return mainModel;
-//    }
-//
-//    @ViewScope
-//    @Provides
-//    LoginContract.Model provideLoginContractModel(LoginModel loginModel) {
-//        return loginModel;
-//    }
-//
-//    @ViewScope
-//    @Provides
-//    HomeFContract.Model provideHomeFContractModel(HomeFModel model) {
-//        return model;
-//    }
-//
-//    @ViewScope
-//    @Provides
-//    HomePagContract.Model provideHomePagContractModel(HomePagModel model) {
-//        return model;
-//    }
-
-
-
+    @ViewScope
+    @Provides
+    StartContract.Model provideStartContractModel(StartModel startModel) {
+        return startModel;
+    }
 
 }

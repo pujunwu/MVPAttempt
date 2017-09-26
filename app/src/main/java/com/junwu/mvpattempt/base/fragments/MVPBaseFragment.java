@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 
 import com.junwu.mvpattempt.base.presenter.IBasePresenter;
 
+import javax.inject.Inject;
+
 /**
  * ===============================
  * 描    述：app模块下所有MVP的Fragment基类
@@ -16,6 +18,7 @@ import com.junwu.mvpattempt.base.presenter.IBasePresenter;
  */
 public abstract class MVPBaseFragment<P extends IBasePresenter> extends BaseFragment {
 
+    @Inject
     protected P mPresenter;
 
     @Override

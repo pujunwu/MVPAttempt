@@ -7,7 +7,6 @@ import com.junwu.mvplibrary.config.IConfigModule;
 import com.junwu.mvplibrary.config.IRegisterApiModule;
 import com.junwu.mvplibrary.delegate.impls.ActivityLifecycle;
 import com.junwu.mvplibrary.di.component.AppComponent;
-import com.junwu.mvplibrary.di.component.DaggerAppComponent;
 import com.junwu.mvplibrary.di.module.AppModule;
 import com.junwu.mvplibrary.di.module.ClientHttpModule;
 import com.junwu.mvplibrary.http.IRepositoryManager;

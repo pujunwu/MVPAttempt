@@ -17,7 +17,6 @@ import com.junwu.mvpattempt.ui.fragments.viewpager.ViewPagerFragement;
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     private int count;
-    private LruCache<Integer, Fragment> mHomeFragments;
 
     public ViewPagerAdapter(FragmentManager fm, int count) {
         super(fm);
@@ -33,6 +32,5 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return count;
     }
-
 
 }

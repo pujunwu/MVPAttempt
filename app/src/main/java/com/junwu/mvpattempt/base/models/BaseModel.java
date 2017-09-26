@@ -17,6 +17,14 @@ public class BaseModel<RF, RC> extends LibBaseModel implements IBaseModel {
 
     /**
      * 提供网络、本地等数据
+     * 普通model不需要调用Retrofit和RxCache的任何一个
+     */
+    public BaseModel() {
+        super(null);
+    }
+
+    /**
+     * 提供网络、本地等数据
      *
      * @param manager {@link IRepositoryManager}
      */

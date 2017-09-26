@@ -3,10 +3,10 @@ package com.junwu.mvpattempt.di.component;
 import com.junwu.mvpattempt.di.module.ModelModule;
 import com.junwu.mvpattempt.di.module.UtilsModule;
 import com.junwu.mvpattempt.di.module.ViewModule;
-import com.junwu.mvpattempt.ui.activitys.start.StartActivity;
+import com.junwu.mvpattempt.ui.fragments.home.HomeFragment;
+import com.junwu.mvpattempt.ui.fragments.start.StartFragment;
 import com.junwu.mvplibrary.di.component.AppComponent;
 import com.junwu.mvplibrary.di.scope.ViewScope;
-import com.junwu.mvplibrary.mvp.view.IView;
 
 import dagger.Component;
 
@@ -21,15 +21,13 @@ import dagger.Component;
 @Component(modules = {ViewModule.class, ModelModule.class, UtilsModule.class}, dependencies = AppComponent.class)
 public interface IViewComponent {
 
-    IView getIView();
-
     /*****************************activity注入***************************/
-
-    void inject(StartActivity activity);
-
+//    void inject(StartActivity activity);
 
     /*****************************Fragment注入***************************/
+    void inject(StartFragment fragment);
 
+    void inject(HomeFragment fragment);
 
     /*****************************其他注入***************************/
 

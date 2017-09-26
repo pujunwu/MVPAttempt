@@ -14,7 +14,7 @@ import com.junwu.mvplibrary.mvp.view.IView;
  * 创建日期：2017/9/14 16:43
  * ===============================
  */
-public class BasePresenter<M extends IModel, V extends IView> extends LibBasePresenter<M, V> {
+public class BasePresenter<M extends IModel, V extends IView> extends LibBasePresenter<M, V> implements IBasePresenter {
 
     //上下文
     protected Activity mActivity;
@@ -42,6 +42,21 @@ public class BasePresenter<M extends IModel, V extends IView> extends LibBasePre
     public BasePresenter(Activity activity, IModel m, IView v) {
         super(m, v);
         this.mActivity = activity;
+    }
+
+    /**
+     * 显示加载框
+     */
+    @Override
+    protected void showLoading() {
+    }
+
+    /**
+     * 关闭加载框
+     */
+    @Override
+    protected void hideLoading() {
+
     }
 
 }

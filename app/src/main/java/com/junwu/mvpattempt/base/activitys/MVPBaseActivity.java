@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 
 import com.junwu.mvpattempt.base.presenter.IBasePresenter;
 
+import javax.inject.Inject;
+
 /**
  * ===============================
  * 描    述：所有MVP的activity都将继承的基类
@@ -14,6 +16,7 @@ import com.junwu.mvpattempt.base.presenter.IBasePresenter;
  */
 public abstract class MVPBaseActivity<P extends IBasePresenter> extends BaseActivity {
 
+    @Inject
     protected P mPresenter;
 
     @Override
