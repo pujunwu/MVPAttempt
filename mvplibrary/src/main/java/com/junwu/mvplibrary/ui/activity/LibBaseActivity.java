@@ -62,13 +62,5 @@ public abstract class LibBaseActivity extends AppCompatActivity implements IActi
     }
 
     /************************其他方法************************/
-    /**
-     * 获取AppComponent
-     *
-     * @return AppComponent
-     */
-    protected AppComponent getAppComponent() {
-        return AppDelegate.sAppDelegate.getAppComponent();
-    }
 
 }

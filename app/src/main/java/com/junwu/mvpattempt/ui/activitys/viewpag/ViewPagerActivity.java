@@ -35,7 +35,7 @@ public class ViewPagerActivity extends BaseActivity {
 
     @Override
     public void initInject() {
-
+        getIViewComponent().inject(this);
     }
 
     @Override

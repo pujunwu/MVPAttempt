@@ -3,13 +3,19 @@ package com.junwu.mvpattempt.app;
 import android.app.Application;
 import android.content.Context;
 
+import com.junwu.mvpattempt.di.component.DaggerIViewComponent;
+import com.junwu.mvpattempt.di.component.IViewComponent;
+import com.junwu.mvpattempt.di.module.ModelModule;
+import com.junwu.mvpattempt.di.module.UtilsModule;
+import com.junwu.mvpattempt.di.module.ViewModule;
 import com.junwu.mvplibrary.config.ConfigModule;
 import com.junwu.mvplibrary.delegate.AppDelegate;
+import com.junwu.mvplibrary.di.component.AppComponent;
 import com.junwu.mvplibrary.http.IRepositoryManager;
 
 /**
  * ===============================
- * 描    述：
+ * 描    述：Application
  * 作    者：pjw
  * 创建日期：2017/9/15 9:25
  * ===============================
@@ -52,4 +58,29 @@ public class App extends Application {
         }
         super.onTerminate();
     }
+
+    /**
+     * 获取AppComponent
+     *
+     * @return AppComponent
+     */
+    protected AppComponent getAppComponent() {
+        //这个方法调用必须在mAppDelegate.onCreate()之后
+        return AppDelegate.sAppDelegate.getAppComponent();
+    }
+
+    /**
+     * 获取IViewComponent
+     *
+     * @return IViewComponent
+     */
+    public IViewComponent getIViewComponent(ViewModule viewModule) {
+        return DaggerIViewComponent.builder()
+                .appComponent(getAppComponent())
+                .viewModule(viewModule)
+                .modelModule(new ModelModule())
+                .utilsModule(new UtilsModule())
+                .build();
+    }
+
 }

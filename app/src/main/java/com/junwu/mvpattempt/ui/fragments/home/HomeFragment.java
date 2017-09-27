@@ -1,11 +1,15 @@
 package com.junwu.mvpattempt.ui.fragments.home;
 
+import android.content.Intent;
+import android.view.View;
 import android.widget.TextView;
 
 import com.junwu.mvpattempt.R;
 import com.junwu.mvpattempt.base.fragments.MVPBaseFragment;
+import com.junwu.mvpattempt.ui.activitys.start.StartActivity;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * ===============================
@@ -32,6 +36,11 @@ public class HomeFragment extends MVPBaseFragment<Presenter> {
     @Override
     public void initData() {
         tvTest.setText(mPresenter.getDate());
+    }
+
+    @OnClick(R.id.tvTest)
+    void onClickListener(View view) {
+        startActivity(new Intent(mContext, StartActivity.class));
     }
 
 }

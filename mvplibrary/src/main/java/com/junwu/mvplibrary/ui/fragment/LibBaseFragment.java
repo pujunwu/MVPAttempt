@@ -12,9 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.junwu.mvplibrary.delegate.AppDelegate;
 import com.junwu.mvplibrary.delegate.IFragment;
-import com.junwu.mvplibrary.di.component.AppComponent;
 import com.junwu.mvplibrary.mvp.view.IView;
 
 /**
@@ -93,15 +91,6 @@ public abstract class LibBaseFragment extends Fragment implements IFragment, IVi
     }
 
     /**********************定义的其他方法*********************/
-
-    /**
-     * 获取AppComponent
-     *
-     * @return AppComponent
-     */
-    protected AppComponent getAppComponent() {
-        return AppDelegate.sAppDelegate.getAppComponent();
-    }
 
     /**
      * 获取布局的方法

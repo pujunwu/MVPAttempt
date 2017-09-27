@@ -3,10 +3,8 @@ package com.junwu.mvpattempt.base.activitys;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.junwu.mvpattempt.di.component.DaggerIViewComponent;
+import com.junwu.mvpattempt.app.App;
 import com.junwu.mvpattempt.di.component.IViewComponent;
-import com.junwu.mvpattempt.di.module.ModelModule;
-import com.junwu.mvpattempt.di.module.UtilsModule;
 import com.junwu.mvpattempt.di.module.ViewModule;
 import com.junwu.mvplibrary.ui.activity.LibBaseActivity;
 
@@ -31,12 +29,7 @@ public abstract class BaseActivity extends LibBaseActivity {
      * @return IViewComponent
      */
     protected IViewComponent getIViewComponent() {
-        return DaggerIViewComponent.builder()
-                .appComponent(getAppComponent())
-                .viewModule(getViewModule())
-                .modelModule(new ModelModule())
-                .utilsModule(new UtilsModule())
-                .build();
+        return App.sApp.getIViewComponent(getViewModule());
     }
 
     protected ViewModule getViewModule() {

@@ -2,10 +2,8 @@ package com.junwu.mvpattempt.base.fragments;
 
 import android.app.Activity;
 
-import com.junwu.mvpattempt.di.component.DaggerIViewComponent;
+import com.junwu.mvpattempt.app.App;
 import com.junwu.mvpattempt.di.component.IViewComponent;
-import com.junwu.mvpattempt.di.module.ModelModule;
-import com.junwu.mvpattempt.di.module.UtilsModule;
 import com.junwu.mvpattempt.di.module.ViewModule;
 import com.junwu.mvplibrary.ui.fragment.LibBaseFragment;
 
@@ -26,12 +24,7 @@ public abstract class BaseFragment extends LibBaseFragment {
      * @return IViewComponent
      */
     protected IViewComponent getIViewComponent() {
-        return DaggerIViewComponent.builder()
-                .appComponent(getAppComponent())
-                .viewModule(getViewModule())
-                .modelModule(new ModelModule())
-                .utilsModule(new UtilsModule())
-                .build();
+        return App.sApp.getIViewComponent(getViewModule());
     }
 
     protected ViewModule getViewModule() {

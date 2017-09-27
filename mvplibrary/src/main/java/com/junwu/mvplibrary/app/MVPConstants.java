@@ -10,4 +10,5 @@ package com.junwu.mvplibrary.app;
 public class MVPConstants {
     //获取rxCache缓存的目录的标识符
     public static final String CACHE_FOLDER = "cacheFolder";
+
 }

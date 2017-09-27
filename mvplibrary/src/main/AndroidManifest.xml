@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.junwu.mvplibrary">
 
+    <!--引用查看地址 https://jitpack.io/#pujunwu/MVPAttempt/-->
 
 </manifest>

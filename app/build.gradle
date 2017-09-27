@@ -52,8 +52,10 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["annotationProcessor"]
     rootProject.ext.dependencies["dagger2-compiler"]
 
-    //mvp封装lib
-    compile project(':mvplibrary')
+    //mvp封装lib，导入源码
+//    compile project(':mvplibrary')
+    //mvp封装lib，导入库 两者选一
+    compile 'com.github.pujunwu.MVPAttempt:mvplibrary:v1.0.2'
 
 }
-//引用查看地址 https://jitpack.io/#pujunwu/MVPAttempt/v1.0.0
+

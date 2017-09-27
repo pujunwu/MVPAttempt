@@ -42,5 +42,4 @@ public class ViewModule {
         return mIView;
     }
 
-
 }

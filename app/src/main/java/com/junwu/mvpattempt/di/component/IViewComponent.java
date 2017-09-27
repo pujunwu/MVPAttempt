@@ -3,8 +3,10 @@ package com.junwu.mvpattempt.di.component;
 import com.junwu.mvpattempt.di.module.ModelModule;
 import com.junwu.mvpattempt.di.module.UtilsModule;
 import com.junwu.mvpattempt.di.module.ViewModule;
+import com.junwu.mvpattempt.ui.activitys.viewpag.ViewPagerActivity;
 import com.junwu.mvpattempt.ui.fragments.home.HomeFragment;
 import com.junwu.mvpattempt.ui.fragments.start.StartFragment;
+import com.junwu.mvpattempt.ui.fragments.viewpager.ViewPagerFragement;
 import com.junwu.mvplibrary.di.component.AppComponent;
 import com.junwu.mvplibrary.di.scope.ViewScope;
 
@@ -22,8 +24,7 @@ import dagger.Component;
 public interface IViewComponent {
 
     /*****************************activity注入***************************/
-//    void inject(StartActivity activity);
-
+    void inject(ViewPagerActivity activity);
     /*****************************Fragment注入***************************/
     void inject(StartFragment fragment);
 
