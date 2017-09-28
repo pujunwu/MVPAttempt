@@ -1,1 +1,1 @@
-include ':app', ':animationlibrary', ':mvplibrary'
+include ':basicslibrary', ':animationlibrary', ':mvpapp', ':mvplibrary', ':ktmvplibrary', ':ktmvpapp'

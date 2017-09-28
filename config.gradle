@@ -109,7 +109,10 @@ ext {
 
             //location
             "location-gd"              : "com.amap.api:location:3.3.0",
-            "location-search-gd"       : "com.amap.api:search:5.2.1"
+            "location-search-gd"       : "com.amap.api:search:5.2.1",
 
+            //kotlin
+            "kotlin-stdlib-jre7"       : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version",
+            "kapt-dagger2-compiler"    : 'com.google.dagger:dagger-compiler:'+version["dagger2SdkVersion"],
     ]
 }

@@ -6,9 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.junwu.mvplibrary.delegate.AppDelegate;
-import com.junwu.mvplibrary.delegate.IActivity;
-import com.junwu.mvplibrary.di.component.AppComponent;
+import com.junwu.basicslibrary.delegate.IActivity;
 import com.junwu.mvplibrary.mvp.view.IView;
 
 /**

@@ -2,9 +2,9 @@ package com.junwu.mvplibrary.mvp.presenter;
 
 import android.util.Log;
 
+import com.junwu.basicslibrary.utils.HandlerUtil;
 import com.junwu.mvplibrary.mvp.model.IModel;
 import com.junwu.mvplibrary.mvp.view.IView;
-import com.junwu.mvplibrary.utils.HandlerUtil;
 
 import org.simple.eventbus.EventBus;
 

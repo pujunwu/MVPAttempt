@@ -1,6 +1,5 @@
 package com.junwu.mvplibrary.di.module;
 
-import com.junwu.mvplibrary.config.ConfigModule;
 import com.junwu.mvplibrary.di.entitys.RxCacheBuilderEntity;
 import com.junwu.mvplibrary.http.IRepositoryManager;
 import com.junwu.mvplibrary.http.RepositoryManager;

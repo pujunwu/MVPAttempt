@@ -1,5 +1,7 @@
 package com.junwu.mvplibrary.config;
 
+import com.junwu.mvplibrary.di.module.ConfigModule;
+
 /**
  * ===============================
  * 描    述：需要配置OKHttp、retrofit、rxCache就实现该接口

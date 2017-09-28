@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MVPAttempt.iml" filepath="$PROJECT_DIR$/MVPAttempt.iml" />
       <module fileurl="file://$PROJECT_DIR$/animationlibrary/animationlibrary.iml" filepath="$PROJECT_DIR$/animationlibrary/animationlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basicslibrary/basicslibrary.iml" filepath="$PROJECT_DIR$/basicslibrary/basicslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktmvpapp/ktmvpapp.iml" filepath="$PROJECT_DIR$/ktmvpapp/ktmvpapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ktmvplibrary/ktmvplibrary.iml" filepath="$PROJECT_DIR$/ktmvplibrary/ktmvplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpapp/mvpapp.iml" filepath="$PROJECT_DIR$/mvpapp/mvpapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvplibrary/mvplibrary.iml" filepath="$PROJECT_DIR$/mvplibrary/mvplibrary.iml" />
     </modules>
   </component>

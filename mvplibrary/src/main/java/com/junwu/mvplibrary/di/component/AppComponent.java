@@ -2,11 +2,11 @@ package com.junwu.mvplibrary.di.component;
 
 import android.app.Application;
 
-import com.junwu.mvplibrary.config.ConfigModule;
 import com.junwu.mvplibrary.delegate.AppDelegate;
 import com.junwu.mvplibrary.di.entitys.RxCacheBuilderEntity;
 import com.junwu.mvplibrary.di.module.AppModule;
 import com.junwu.mvplibrary.di.module.ClientHttpModule;
+import com.junwu.mvplibrary.di.module.ConfigModule;
 import com.junwu.mvplibrary.http.IRepositoryManager;
 
 import javax.inject.Singleton;

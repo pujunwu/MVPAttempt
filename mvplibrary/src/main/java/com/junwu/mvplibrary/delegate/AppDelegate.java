@@ -2,14 +2,11 @@ package com.junwu.mvplibrary.delegate;
 
 import android.app.Application;
 
-import com.junwu.mvplibrary.config.ConfigModule;
+import com.junwu.basicslibrary.delegate.impls.ActivityLifecycle;
 import com.junwu.mvplibrary.config.IConfigModule;
 import com.junwu.mvplibrary.config.IRegisterApiModule;
-import com.junwu.mvplibrary.delegate.impls.ActivityLifecycle;
 import com.junwu.mvplibrary.di.component.AppComponent;
-import com.junwu.mvplibrary.di.component.DaggerAppComponent;
-import com.junwu.mvplibrary.di.module.AppModule;
-import com.junwu.mvplibrary.di.module.ClientHttpModule;
+import com.junwu.mvplibrary.di.module.ConfigModule;
 import com.junwu.mvplibrary.http.IRepositoryManager;
 
 /**
@@ -55,11 +52,11 @@ public class AppDelegate {
      * @param configModules 配置ApiService和cacheApi接口
      */
     public void injectRegApiService(IConfigModule configModules, IRegisterApiModule... registerApiModules) {
-        mAppComponent = DaggerAppComponent.builder()
-                .appModule(new AppModule(mApplication))//提供application
-                .clientHttpModule(new ClientHttpModule())//用于提供okhttp和retrofit的单例
-                .configModule(getConfigModule(configModules))
-                .build();
+//        mAppComponent = DaggerAppComponent.builder()
+//                .appModule(new AppModule(mApplication))//提供application
+//                .clientHttpModule(new ClientHttpModule())//用于提供okhttp和retrofit的单例
+//                .configModule(getConfigModule(configModules))
+//                .build();
         mAppComponent.inject(this);
         //调用注册apiService
         if (registerApiModules != null) {

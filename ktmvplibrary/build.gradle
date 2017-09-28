@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+//Kotlin里有个对Android开发来说很好用的特性就是它剔除了findViewById()方法的调用
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    generateStubs = true
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //rxJava
+    compile rootProject.ext.dependencies["rxjava2"]
+    compile (rootProject.ext.dependencies["rxandroid2"]){
+        exclude module: 'rxjava'
+    }
+    //rxcache2
+    compile(rootProject.ext.dependencies["rxcache2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+    }
+    //将缓存json转换为java 实体对象
+    compile(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
+        exclude module: 'gson'
+    }
+    //network
+    compile (rootProject.ext.dependencies["retrofit"]){
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+    }
+    //Retrofit中将json转换为Java 具使用体GsonConverterFactory
+    compile(rootProject.ext.dependencies["retrofit-converter-gson"]) {
+        exclude module: 'gson'
+        exclude module: 'okhttp'
+        exclude module: 'okio'
+        exclude module: 'retrofit'
+    }
+    //Retrofit到RxJava转换库  RxJava2CallAdapterFactory
+    compile(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'okhttp'
+        exclude module: 'retrofit'
+        exclude module: 'okio'
+    }
+    compile rootProject.ext.dependencies["okhttp3"]
+    compile rootProject.ext.dependencies["glide"]
+
+    //tools
+    compile rootProject.ext.dependencies["dagger2"]
+    annotationProcessor(rootProject.ext.dependencies["dagger2-compiler"]) {
+        exclude module: 'dagger'
+    }
+    compile rootProject.ext.dependencies["gson"]
+
+    //other
+    compile rootProject.ext.dependencies["logger"]
+
+    //kotlin
+    compile rootProject.ext.dependencies["kotlin-stdlib-jre7"]
+    kapt rootProject.ext.dependencies["kapt-dagger2-compiler"]
+
+    //基础library
+    compile project(":basicslibrary")
+
+}
