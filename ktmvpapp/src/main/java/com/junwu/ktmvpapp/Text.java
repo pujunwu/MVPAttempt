@@ -8,4 +8,8 @@ package com.junwu.ktmvpapp;
  * ===============================
  */
 public class Text {
+
+
+
+
 }
