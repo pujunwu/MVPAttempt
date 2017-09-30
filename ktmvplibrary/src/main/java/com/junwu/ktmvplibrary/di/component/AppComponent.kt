@@ -5,13 +5,8 @@ import com.junwu.ktmvplibrary.delegate.AppDelegate
 import com.junwu.ktmvplibrary.di.module.AppModule
 import com.junwu.ktmvplibrary.di.module.ClientHttpModule
 import com.junwu.ktmvplibrary.di.module.ConfigModule
-import com.junwu.ktmvplibrary.http.IRepositoryManager
 import com.junwu.ktmvplibrary.tests.HomeActivity
 import dagger.Component
-import io.rx_cache2.internal.RxCache
-import junwu.com.mvplibrary.di.entitys.RxCacheBuilderEntity
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
 import javax.inject.Singleton
 
 /**
