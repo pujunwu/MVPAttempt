@@ -143,8 +143,6 @@ public void onCreate() {
 <p>ActivityLifecycleCallbacks具体有那些回调方法可以自行百度，这里就不介绍了。</p>
 <p>到这里，关键部分已经介绍完了，其他的后面继续更新。</p></div></div>
 
-
-https://jitpack.io/#pujunwu/MVPAttempt/v1.0.0
-
 <h4>关于MVP部分</h4>
 未完待续...
+<h4>增加kotlin语言的MVPlibary</h4>
