@@ -1,5 +1,4 @@
 
-        <div data-note-content="" class="show-content">
           <p>纯粹是个人学习总结，如有不对的地方请吐槽。<br>
 目录结构</p>
 <h4>app模块下的目录结构</h4>
@@ -384,5 +383,3 @@ public class ModelModule {
 4：还是要将代码自己梳理一遍，具体可以参照<a href="https://github.com/pujunwu/MVPAttempt" target="_blank">MVPAttempt</a><br>
 这里打个小广告：关于MVPAttempt框架的应用这里有个<a href="http://p.gdown.baidu.com/09e616d9f9814eab5605a4cc3369709b8c5dce6a8c90f702b42fd2a49da6c0380310a1816d2e3dfc3d574bc9e7c6b90fd15623d31c5c9910244df9d1c97246a48ed1997cbd513dc25abdef5e538017ff6bc9ab2f364b761f12bb3b528bebef9d5da03c99896c8e7617c75b872dd21d987582ae7017e1e02f96928c39958ea7e70226be49638f1e33d55a3f7bab4512cb358721ca9ddde6a38c3d2839ae85d979b7b2d231f9bdc14fa83fa01a6651dc7d40cd75b122c619109a681c5d7d78a7073d1f6c731502b5067fac969dbaec514be1d051db1632f8664181f54dded32eb7949c771c11c70083daebacfb2c2e1f3af02852b6ab79e0d4713775e476464fcb1538926fee90cd00e8559705cd387ebf53238af34d3cd59a6003b474633f6506263b7ee2981aabb5f03a6bd6a187b16f9d735d7ea490a296088bd7a7210a70f3cfcb136ac47e342379e3d9c9764e9febb8420f96f1a4d67c" target="_blank">app</a>已经上线，有兴趣的可以下载下来看看<br>
 所有的注入都由IViewComponent来完成，可能会太死板，如果有特殊注入就可以按照dagger完整的方式写一套注入来完成，这样也是可以的。</p>
-
-        </div>
