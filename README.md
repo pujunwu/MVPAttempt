@@ -1,9 +1,8 @@
-
-          <p>纯粹是个人学习总结，如有不对的地方请吐槽。<br>
+<p>纯粹是个人学习总结，如有不对的地方请吐槽。<br>
 目录结构</p>
 <h4>app模块下的目录结构</h4>
 <div class="image-package">
-<img src="//upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
+<img src="http://upload-images.jianshu.io/upload_images/4986308-06c3a6a5e20ab500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
 </div><br>
 <p>app目录下放全局配置文件，包括Application<br>
 base目录一眼就看清是什么<br>
@@ -12,7 +11,7 @@ ui这个目录也很清楚</p>
 
 <h4>mvplibrary模块下的目录</h4>
 <div class="image-package">
-<img src="//upload-images.jianshu.io/upload_images/4986308-9d609f4d300f1a4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-9d609f4d300f1a4f.png?imageMogr2/auto-orient/strip" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
+<img src="http://upload-images.jianshu.io/upload_images/4986308-9d609f4d300f1a4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-9d609f4d300f1a4f.png?imageMogr2/auto-orient/strip" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
 </div><br>
 <p>config是配置有关的文件<br>
 delegate是监听Activity和Fragment生命周期的文件，这里就是不需要继承的关键代码<br>
@@ -81,7 +80,7 @@ protected AppComponent getAppComponent() {
 <p>关于IActivity接口我们先来看看delegate目录下的文件</p>
 <br>
 <div class="image-package">
-<img src="//upload-images.jianshu.io/upload_images/4986308-ed3fcf161780a02b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-ed3fcf161780a02b.png?imageMogr2/auto-orient/strip" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
+<img src="http://upload-images.jianshu.io/upload_images/4986308-ed3fcf161780a02b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/4986308-ed3fcf161780a02b.png?imageMogr2/auto-orient/strip" alt="image.png" style="cursor: zoom-in;"><br><div class="image-caption">image.png</div>
 </div><br>
 <p>再来看看IActivity里面的方法</p>
 
