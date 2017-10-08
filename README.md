@@ -1,27 +1,4 @@
-<div class="article">
-        <h1 class="title">MVP模式做的尝试</h1>
 
-        <!-- 作者区域 -->
-        <div class="author">
-          <a class="avatar" href="/u/3d21a3e33cc9">
-            <img src="//upload.jianshu.io/users/upload_avatars/4986308/b9334132-213f-4792-9f4f-1e689e21eb35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96">
-</a>          <div class="info">
-            <span class="name"><a href="/u/3d21a3e33cc9">junwu_123</a></span>
-              <span class="tag">作者</span>
-            <!-- 关注用户按钮 -->
-            <div props-data-classes="user-follow-button-header" data-author-follow-button=""></div>
-            <!-- 文章数据信息 -->
-            <div class="meta">
-              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
-                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="最后编辑于 2017.09.26 14:54">2017.09.18 17:33*</span>
-              <span class="wordage">字数 1311</span>
-            <span class="views-count">阅读 0</span><span class="comments-count">评论 0</span><span class="likes-count">喜欢 0</span></div>
-          </div>
-          <!-- 如果是当前作者，加入编辑按钮 -->
-        <a href="/writer#/notebooks/15441411/notes/15822149" target="_blank" class="edit">编辑文章</a></div>
-        <!-- -->
-
-        <!-- 文章内容 -->
         <div data-note-content="" class="show-content">
           <p>纯粹是个人学习总结，如有不对的地方请吐槽。<br>
 目录结构</p>
@@ -409,14 +386,3 @@ public class ModelModule {
 所有的注入都由IViewComponent来完成，可能会太死板，如果有特殊注入就可以按照dagger完整的方式写一套注入来完成，这样也是可以的。</p>
 
         </div>
-        <!--  -->
-
-        <div class="show-foot">
-          <a class="notebook" href="/nb/15441411">
-            <i class="iconfont ic-search-notebook"></i> <span>第三方框架学习</span>
-</a>          <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
-            © 著作权归作者所有
-          </div>
-          
-        </div>
-    </div>
