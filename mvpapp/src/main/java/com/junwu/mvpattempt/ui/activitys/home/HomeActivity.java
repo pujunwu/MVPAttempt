@@ -2,6 +2,7 @@ package com.junwu.mvpattempt.ui.activitys.home;
 
 import android.support.v4.app.FragmentTransaction;
 
+import com.junwu.basicslibrary.utils.HandlerUtil;
 import com.junwu.mvpattempt.R;
 import com.junwu.mvpattempt.base.activitys.BaseActivity;
 import com.junwu.mvpattempt.ui.fragments.home.HomeFragment;
@@ -25,6 +26,7 @@ public class HomeActivity extends BaseActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frameLayout, new HomeFragment());
         ft.commit();
+        HandlerUtil
     }
 
     @Override

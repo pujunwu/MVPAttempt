@@ -6,7 +6,6 @@ import com.junwu.mvpattempt.di.module.ViewModule;
 import com.junwu.mvpattempt.ui.activitys.viewpag.ViewPagerActivity;
 import com.junwu.mvpattempt.ui.fragments.home.HomeFragment;
 import com.junwu.mvpattempt.ui.fragments.start.StartFragment;
-import com.junwu.mvpattempt.ui.fragments.viewpager.ViewPagerFragement;
 import com.junwu.mvplibrary.di.component.AppComponent;
 import com.junwu.mvplibrary.di.scope.ViewScope;
 

@@ -12,7 +12,7 @@ import android.os.Looper;
  */
 public class HandlerUtil {
 
-    public final static Handler HANDLER = new Handler(Looper.myLooper());
+    public final static Handler HANDLER = new Handler(Looper.getMainLooper());
 
     public static void post(Runnable runnable) {
         HANDLER.post(runnable);
