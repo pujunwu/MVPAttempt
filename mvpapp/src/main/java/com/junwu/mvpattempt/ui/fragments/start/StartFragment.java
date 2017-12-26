@@ -5,12 +5,15 @@ import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.TextView;
 
 import com.junwu.mvpattempt.R;
 import com.junwu.mvpattempt.base.fragments.MVPBaseFragment;
 import com.junwu.mvpattempt.entitys.DataEntity;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * ===============================
@@ -23,6 +26,8 @@ public class StartFragment extends MVPBaseFragment<StartPresenter> implements St
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+    @BindView(R.id.rtv_text)
+    TextView rtv_text;
     @BindView(R.id.rv_text)
     RecyclerView rvText;
 
@@ -40,6 +45,13 @@ public class StartFragment extends MVPBaseFragment<StartPresenter> implements St
     public void initData() {
         toolbar.setTitle("123");
         toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rtv_text.setEnabled(true);
+                rtv_text.setClickable(true);
+            }
+        });
         rvText.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
         rvText.setAdapter(mPresenter.getAdapter());
     }
@@ -49,6 +61,12 @@ public class StartFragment extends MVPBaseFragment<StartPresenter> implements St
         if (entity.mClass != null) {
             startActivity(new Intent(mContext, entity.mClass));
         }
+    }
+
+    @OnClick(R.id.rtv_text)
+    void onClickListener() {
+        rtv_text.setEnabled(false);
+        rtv_text.setClickable(false);
     }
 
 }

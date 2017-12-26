@@ -17,7 +17,8 @@
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll"/>
 
-        <TextView
+        <com.junwu.basicslibrary.widget.roundview.RoundTextView
+            android:id="@+id/rtv_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -26,7 +27,14 @@
             android:text="当前项目是MVP+dagger2+RxJava的尝试"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
-            app:layout_scrollFlags="enterAlways"/>
+            app:layout_scrollFlags="enterAlways"
+            app:rv_backgroundColor="#55000000"
+            app:rv_backgroundEnabledColor="#ff0000"
+            app:rv_backgroundPressColor="#33000000"
+            app:rv_cornerRadius="25dp"
+            app:rv_strokeColor="#d6d6d6"
+            app:rv_strokeWidth="1px"
+            app:rv_textPressColor="#ffff00"/>
 
     </android.support.design.widget.AppBarLayout>
 

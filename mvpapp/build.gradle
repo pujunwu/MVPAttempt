@@ -51,11 +51,11 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
     annotationProcessor rootProject.ext.dependencies["annotationProcessor"]
     rootProject.ext.dependencies["dagger2-compiler"]
-
+    //kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     //mvp封装lib，导入源码
     compile project(':mvplibrary')
     //mvp封装lib，导入库 两者选一
 //    compile 'com.github.pujunwu.MVPAttempt:mvplibrary:v1.0.2'
 
 }
-

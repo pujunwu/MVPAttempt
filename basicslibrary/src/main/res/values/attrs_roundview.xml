@@ -6,6 +6,8 @@
     <attr name="rv_backgroundColor" format="color"/>
     <!-- 圆角矩形背景色press -->
     <attr name="rv_backgroundPressColor" format="color"/>
+    <!-- 圆角矩形背景色enabled -->
+    <attr name="rv_backgroundEnabledColor" format="color"/>
     <!-- 圆角弧度,单位dp-->
     <attr name="rv_cornerRadius" format="dimension"/>
     <!-- 圆角弧度,单位dp-->
@@ -16,6 +18,8 @@
     <attr name="rv_strokePressColor" format="color"/>
     <!-- 文字颜色press-->
     <attr name="rv_textPressColor" format="color"/>
+    <!-- 文字颜色enabled-->
+    <attr name="rv_textEnabledColor" format="color"/>
     <!-- 圆角弧度是高度一半-->
     <attr name="rv_isRadiusHalfHeight" format="boolean"/>
     <!-- 圆角矩形宽高相等,取较宽高中大值-->
@@ -34,11 +38,13 @@
     <declare-styleable name="RoundTextView">
         <attr name="rv_backgroundColor"/>
         <attr name="rv_backgroundPressColor"/>
+        <attr name="rv_backgroundEnabledColor"/>
         <attr name="rv_cornerRadius"/>
         <attr name="rv_strokeWidth"/>
         <attr name="rv_strokeColor"/>
         <attr name="rv_strokePressColor"/>
         <attr name="rv_textPressColor"/>
+        <attr name="rv_textEnabledColor"/>
         <attr name="rv_isRadiusHalfHeight"/>
         <attr name="rv_isWidthHeightEqual"/>
         <attr name="rv_cornerRadius_TL"/>
@@ -51,6 +57,7 @@
     <declare-styleable name="RoundLinearLayout">
         <attr name="rv_backgroundColor"/>
         <attr name="rv_backgroundPressColor"/>
+        <attr name="rv_backgroundEnabledColor"/>
         <attr name="rv_cornerRadius"/>
         <attr name="rv_strokeWidth"/>
         <attr name="rv_strokeColor"/>
@@ -67,6 +74,7 @@
     <declare-styleable name="RoundRelativeLayout">
         <attr name="rv_backgroundColor"/>
         <attr name="rv_backgroundPressColor"/>
+        <attr name="rv_backgroundEnabledColor"/>
         <attr name="rv_cornerRadius"/>
         <attr name="rv_strokeWidth"/>
         <attr name="rv_strokeColor"/>
@@ -83,6 +91,7 @@
     <declare-styleable name="RoundFrameLayout">
         <attr name="rv_backgroundColor"/>
         <attr name="rv_backgroundPressColor"/>
+        <attr name="rv_backgroundEnabledColor"/>
         <attr name="rv_cornerRadius"/>
         <attr name="rv_strokeWidth"/>
         <attr name="rv_strokeColor"/>

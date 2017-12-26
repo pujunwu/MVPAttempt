@@ -26,7 +26,6 @@ public class HomeActivity extends BaseActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frameLayout, new HomeFragment());
         ft.commit();
-        HandlerUtil
     }
 
     @Override
